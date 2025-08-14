@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+form {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+
+  width: 100%;
+  max-width: 400px;
+}
+label {
+  font-weight: bold;
+  color: #860303;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+
+p {
+ text-align: center;
+    color: rgb(0, 0, 0) ;
+ 
+  margin-top: 10px;
+}
+
+a {
+  color: #720505;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ </style>
+</head>
+<body>
+
+  <form action="login.php" method="post">
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="senha">Senha:</label><br>
+    <input type="password" id="senha" name="senha" required><br><br>
+
+    <input type="submit" value="Entrar">
+    <p>Não tem uma conta? <a href="index.html">Cadastre-se</a></p>
+  </form>
+
+  
+</body>
+</html>
